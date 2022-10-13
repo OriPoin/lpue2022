@@ -3,7 +3,8 @@ project(copy VERSION 0.1.0)
 
 # boost.program_options & boost.log & boost.test dependency
 find_package(Boost REQUIRED COMPONENTS program_options log_setup log unit_test_framework date_time)
-
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 include(CTest)
