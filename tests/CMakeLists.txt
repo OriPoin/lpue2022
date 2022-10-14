@@ -1,0 +1,3 @@
+add_executable(contentscan_test contentscan_test.cc)
+target_link_libraries(contentscan_test contentscan ${Boost_LIBRARIES})
+add_test(NAME contentscan_test COMMAND contentscan_test)
